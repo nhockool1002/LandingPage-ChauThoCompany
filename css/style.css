@@ -1,0 +1,69 @@
+/* CUSTOM FONT IN LOCAL */
+@font-face { font-family: 'Avo'; src: url('fonts/UTM-Avo.ttf'); } 
+@font-face { font-family: 'Avo'; font-weight: bold; src: url('fonts/UTM-AvoBold.ttf');}
+@font-face { font-family: 'Avo'; font-style: italic; src: url('fonts/UTM-AvoItalic.ttf');}
+@font-face { font-family: 'Avo'; font-weight: bold; font-style: italic; src: url('fonts/UTM-AvoBold_Italic.ttf');}
+
+body,html{width: 100%;max-width: 100%;height:auto;}
+.nopadding{margin:0;padding:0;}
+.block-gioithieu{
+    background-image: url("../images/bg1.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 1024px;
+}
+.div-of-logo{
+    width:10%;
+}
+.logo{
+    padding-top:3%;
+    padding-left:5%;
+}
+.div-of-slogan{
+    width:40%;
+}
+.slogan{
+    padding-top:3%;
+    padding-left:5%;
+}
+.textblock1{
+    margin-top:3%;
+    margin-left:5%;
+    font-family: Avo;
+    color:white;
+    width:50%;
+    background-image: url(../images/gachthang.png);
+    background-repeat: no-repeat;
+    background-position: left left;
+}
+.textblock2{
+    margin-top:6%;
+    margin-left:5%;
+    padding-top:2%;
+    font-family: Avo;
+    color:white;
+    width:50%;
+    background-image: url(../images/gachngang.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.textblock2 p{
+    text-align:right;
+}
+.textblock1 p{
+    text-align:justify;
+}
+@media screen and (max-width: 1368px){
+    .block-gioithieu{
+        height: 900px;
+    }
+}
+@media screen and (max-width: 1240px){
+    .block-gioithieu{
+        height: 700px;
+    }
+}
