@@ -16,6 +16,46 @@ body,html{width: 100%;max-width: 100%;height:auto;}
     background-size: 100% 100%;
     height: 1024px;
 }
+.block-khuyenmai{
+    background-image: url("../images/bgkm.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    height: 900px;
+}
+.block-footer{
+    background-image: url("../images/bgfooter.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.div-of-khuyenmaitext img {
+    width: 100%;
+}
+.div-of-khuyenmaitext {
+    position: absolute;
+    left: 1%;
+    bottom: 2%;
+    width: 490px;
+}
+.div-of-khuyenmaicircle img {
+    width: 100%;
+}
+.div-of-khuyenmaicircle {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 800px;
+}
 .div-of-logo{
     width:10%;
 }
@@ -57,13 +97,119 @@ body,html{width: 100%;max-width: 100%;height:auto;}
 .textblock1 p{
     text-align:justify;
 }
+.contactform form input {
+    margin-bottom: 3%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0;
+}
+.contactform {
+    background-color: black;
+    padding: 5% 5%;
+}
+.odieuform{
+    background-image: url('../images/bgkeugoi.jpg');
+}
+.onhapform {
+    width: 80%;
+    margin: 0 auto;
+}
+p.firsttitle {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-top: 10%;
+}
+p.secondtitle {
+    text-align: center;
+    font-size: 1.7rem;
+    color: red;
+    font-weight: bolder;
+}
+.social-zone{
+    padding-top:3%;
+    text-align: center;
+}
+.thongtin{
+    padding-top:3%;
+}
+p.title-thongtin {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.othongin{
+    font-family: 'Avo';
+}
+p.mail-thongtin {
+    font-weight: bolder;
+}
+p.dienthoai-thongtin {
+    font-weight: bolder;
+}
+p.diachi-thongtin {
+    font-weight: bolder;
+}
+.nutgui {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+}
 @media screen and (max-width: 1368px){
     .block-gioithieu{
-        height: 900px;
+        height: 820px;
     }
 }
 @media screen and (max-width: 1240px){
     .block-gioithieu{
         height: 700px;
+    }
+}
+@media screen and (max-width: 360px){
+*{}
+}
+@media screen and (max-width: 480px){
+    *{}
+}
+@media screen and (max-width: 680px){
+    *{}
+    .div-of-logo {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .div-of-slogan {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .textblock1 {
+        width: 91%;
+        background-color: #1d1d1db3;
+        background-image: unset;
+    }
+    .textblock2 {
+        width: 91%;
+        background-color: #1d1d1db3;
+        background-image: unset;
+    }
+    .textblock2 p{
+        text-align: justify;
+    }
+    .block-gioithieu {
+        background-size: auto;
+    }
+    .div-of-khuyenmaicircle {
+        position: relative;
+        width: 100%;
+        padding-top: 15%;
+        margin-left: 5%;
+    }
+    .div-of-khuyenmaitext {
+        position: relative;
+        width: 100%;
+        padding-top: 5%;
+    }
+    .block-khuyenmai {
+        height: auto;
+        background-size: auto;
     }
 }
