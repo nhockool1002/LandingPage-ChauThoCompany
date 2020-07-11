@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
   $sdt = $_POST['sdt'];
   $email = $_POST['email'];
   $ids = "SELECT COUNT(*) FROM data";
-  $dd = $conn->query($ids);
+  $dd = pg_query($conn, $ids);
   var_dump($dd);
   $sql = "INSERT INTO data(name, phone, email) 
               VALUES ('$name','$sdt','$email')";
