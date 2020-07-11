@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
   var_dump($dd);
   $sql = "INSERT INTO data(name, phone, email) 
               VALUES ('$name','$sdt','$email')";
-  var_dump($sql);
+  pg_query($conn, $sql);
   if ($conn->query($sql)) {
     $_SESSION['flash'] = "<br><div class='alert alert-success text-center'>Thông tin đã được gửi đi</div>";
     header("Location:../index.php#footer");
