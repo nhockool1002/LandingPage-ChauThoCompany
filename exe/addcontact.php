@@ -6,6 +6,8 @@ if (isset($_POST['submit'])) {
   $name = $_POST['hoten'];
   $sdt = $_POST['sdt'];
   $email = $_POST['email'];
+  $ids = "SELECT COUNT(*) FROM data";
+  var_dump($ids);
   $sql = "INSERT INTO data(name, phone, email) 
               VALUES ('$name','$sdt','$email')";
   var_dump($sql);
