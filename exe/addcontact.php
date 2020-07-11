@@ -8,9 +8,8 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $ids = "SELECT COUNT(*) FROM data";
   $dd = pg_query($conn, $ids);
-  var_dump($dd);
-  $sql = "INSERT INTO data(name, phone, email) 
-              VALUES ('$name','$sdt','$email')";
+  $sql = "INSERT INTO data(id, name, phone, email) 
+              VALUES (" . $dd + 1 . ", $name','$sdt','$email')";
   pg_query($conn, $sql);
   if ($conn->query($sql)) {
     $_SESSION['flash'] = "<br><div class='alert alert-success text-center'>Thông tin đã được gửi đi</div>";
