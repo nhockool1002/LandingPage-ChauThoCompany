@@ -8,11 +8,13 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $sql = "INSERT INTO data(name, phone, email) 
               VALUES ('$name', '$sdt', '$email')";
-  pg_query($conn, $sql);
-  if (pg_query($conn, $sql)) {
+  $flg = 0;
+  // pg_query($conn, $sql);
+  try {
+    $conn->query($sql);
     $_SESSION['flash'] = "<br><div class='alert alert-success text-center'>Thông tin đã được gửi đi</div>";
     header("Location:../index.php#footer");
-  } else {
+  } catch (\Throwable $th) {
     $_SESSION['flash'] = "<br><div class='alert alert-danger text-center'>Có lỗi trong quá trình gửi đi</div>";
     header("Location:../index.php#footer");
   }
